@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(240, 240, 240);
+    overflow: hidden;
+}
+
+.card{
+    width: 350px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 3rem 2rem rgba(192, 192, 192, 0.253);
+    
+}
+
+.top .parent{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    background: black;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 6px solid white;
+}
+
+.top, .contacts, .actions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 10px;
+} 
+
+.top{  
+    position: relative;
+    background-color: #ffffff;
+    /* opacity: 0.8; */
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 10px ), repeating-linear-gradient( #00000055, #000000 );  
+    height: 200PX;
+    /* background: black; */
+    margin: 0;
+    border-radius: 8px;
+}
+
+.top svg{
+    color: black;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.contacts{
+    flex-direction: column;
+}
+
+.btn{
+    cursor: pointer;
+    width: 45%;
+    margin: 5px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.cold{
+    background: none;
+    color: rgb(170, 170, 170);
+    outline: 2px solid rgb(170, 170, 170);
+}
+
+.tag{
+    color: rgb(170, 170, 170);
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+.contacts p{
+    font-size: .9rem;
+    margin: 2px;
+    text-align: center;
+}
+
+.socials{
+    margin-top: 10px;
+}
+
+a{
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: grey;
+}
+
+.hot:hover{
+    background: none;
+    color: black;
+    outline: 2px solid black;
+}
+
+.cold:hover{
+    background: none;
+    color: black;
+    outline: 2px solid black;
+}
+
+.mailing p{
+    margin: 5px;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.mailing p svg{
+    margin-left: 10px;
+}
+
